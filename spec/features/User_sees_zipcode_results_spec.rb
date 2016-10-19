@@ -22,11 +22,13 @@ RSpec.feature "User Search Results" do
       expect(fuel.type).should include("LPG")
 
       # And for each of the stations I should see Name, Address, Fuel Types, Distance, and Access Times
-      epect(page).to have_content("Name:")
-      epect(page).to have_content("Address:")
-      epect(page).to have_content("Fuel Types:")
-      epect(page).to have_content("Distance:")
-      epect(page).to have_content("Access Times:")
+      expect(page).to have_content("Name:")
+      expect(page).to have_content("Street Address:")
+      expect(page).to have_content("Zip:")
+      expect(page).to have_content("State:")
+      expect(page).to have_content("Fuel Types:")
+      expect(page).to have_content("Distance:")
+      expect(page).to have_content("Access Times:")
     end
   end
 end

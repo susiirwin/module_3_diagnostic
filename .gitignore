@@ -18,3 +18,9 @@
 
 # Ignore application configuration
 /config/application.yml
+
+# Ignore Byebug command history file.
+.byebug_history
+
+# Ignore VCR Cassettes
+/spec/fixtures/vcr_cassettes/*

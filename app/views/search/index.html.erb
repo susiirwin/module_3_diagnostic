@@ -2,12 +2,13 @@
 
 <% @results.each do |station| %>
 <ul>
-  <%= station.station_name %>
-  <%= station.state %>
-  <%= station.street_address %>
-  <%= station.zip %>
-  <%= station.fuel_type_code %>
-  <%= station.radius %>
+  <li>Station Name: <%= station.station_name %></li>
+  <li>State: <%= station.state %></li>
+  <li>Street Address: <%= station.street_address %></li>
+  <li>Zip: <%= station.zip %></li>
+  <li>Fuel Types: <%= station.fuel_type_code %></li>
+  <li>Distance: <%= station.radius %></li>
+  <li>Access Times: <%= station.access_days_time %></li>
 
 </ul>
 <% end %>

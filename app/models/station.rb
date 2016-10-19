@@ -4,7 +4,8 @@ class Station
               :street_address,
               :zip,
               :fuel_type_code,
-              :radius
+              :radius,
+              :access_days_time
 
   def initialize(result)
     @station_name = result["station_name"]
@@ -13,5 +14,6 @@ class Station
     @zip = result["zip"]
     @fuel_type_code = result["fuel_type_code"]
     @radius = result["radius"]
+    @access_days_time = result["access_days_time"]
   end
 end
